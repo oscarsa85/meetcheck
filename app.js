@@ -281,6 +281,18 @@ async function handleSubmit() {
     showError('Paste at least a subject or a body — we need something to judge.');
     return;
   }
+  if ((subject + ' ' + body).trim().length < 10) {
+    showError('That\'s not an invite, that\'s a shrug. Give us a bit more to work with.');
+    return;
+  }
+  if (body.length > 4000) {
+    showError('That\'s not a meeting invite, that\'s a novel. Trim it to 4000 characters.');
+    return;
+  }
+  if (rate < 15) {
+    showError('Nobody costs €' + rate + '/hour. Use a realistic rate so the number means something.');
+    return;
+  }
 
   showSection('loading');
   startLoadingRotation();
