@@ -22,13 +22,13 @@
 
 <header class="header">
   <div class="header-inner">
-    <div class="logo">
+    <a href="https://meetcheck.app" class="logo">
       <svg width="28" height="28" viewBox="0 0 88 88" fill="none" aria-hidden="true">
         <rect x="8" y="8" width="72" height="72" rx="20" fill="var(--accent)"/>
         <path d="M27 45 L39 57 L61 31" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
       </svg>
       <span class="logo-text">MeetCheck</span>
-    </div>
+    </a>
     <div class="header-right">
       <div class="header-tagline" id="header-tagline">Know before you accept.</div>
       <button id="theme-toggle" class="theme-toggle">☾ Dark</button>
@@ -144,7 +144,14 @@
 </main>
 
 <footer class="footer">
-  <p>No sign-up, no fluff. Built by a Senior Manager who's sat through too many of these. © 2026 meetcheck.app</p>
+  <div class="footer-inner">
+    <p class="footer-built">No sign-up, no fluff. Built by a Senior Manager who's sat through too many of these.</p>
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 <a href="https://meetcheck.app" target="_blank" rel="noopener" class="footer-link">meetcheck.app</a></span>
+      <span class="footer-dot">·</span>
+      <a href="https://tally.so/r/VLORJl" target="_blank" rel="noopener" class="footer-feedback-link">💬 Feedback &amp; Feature Requests</a>
+    </div>
+  </div>
 </footer>
 
 <script src="app.js"></script>
