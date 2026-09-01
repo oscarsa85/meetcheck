@@ -117,10 +117,11 @@ body {
   color: var(--accent);
 }
 
-.hero-sub {
-  color: var(--text-muted);
+.form-guide {
+  text-align: center;
   font-size: 15px;
-  margin: 0;
+  color: var(--text-muted);
+  margin: -16px 0 20px;
 }
 
 .form-card {
